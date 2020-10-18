@@ -79,7 +79,7 @@ function calculadora (a , b , operacion){
 //     return arrayHTTP
 // }
 
- 
+ //borrate
 function agregarHttp(url) {
    
     return    'http://'+ url 
