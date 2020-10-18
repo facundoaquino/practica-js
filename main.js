@@ -1,18 +1,12 @@
-let personas = [
-	{ id: 'p1', nombre: 'Luis', estatus: true },
-	{ id: 'p2', nombre: 'Pedro', estatus: true },
-	{ id: 'p3', nombre: 'Emmanuel', estatus: true },
-];
+const arr = [1,2,3,4,5,6,7,8]
 
-//funcion que elimina por  numero de id y objeto como parametro
-// El método findIndex() devuelve el índice del primer elemento
-//  de un array que cumpla con la función de prueba proporcionada. En caso contrario devuelve -1.
-//funciona para atributos de valores unicos como un id
-const personaEliminar = 'p3';
 
-personas.forEach((item,index,arr)=>{
-    if(item.id==personaEliminar)
-    { arr.splice(index,1 )}
+const resultado = arr.findIndex((el,index)=>{
+    console.log(el,index);
+   if(el==5){
+       arr.splice(index,1)
+       return true
+   }
 })
-
-console.log(personas)
+// console.log(resultado);
+console.log(`el array quedo asi : ${arr}`);

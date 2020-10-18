@@ -16,3 +16,9 @@ const eliminaPorId = (obj, idAEliminar) => {
 };
 
 console.log(eliminaPorId(personas, 'p3'));
+
+/*---------------------- con for each ---------------------*/
+// personas.forEach((item,index,arr)=>{
+//     if(item.id==personaEliminar)
+//     { arr.splice(index,1 )}
+// })
