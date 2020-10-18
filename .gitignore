@@ -1,0 +1,7 @@
+*.json
+/node_modules
+/calculadora
+practicajs.css
+practicajs.html
+playground.js
+/images
