@@ -1,12 +1,41 @@
-const arr = [1,2,3,4,5,6,7,8]
 
 
-const resultado = arr.findIndex((el,index)=>{
-    console.log(el,index);
-   if(el==5){
-       arr.splice(index,1)
-       return true
-   }
-})
-// console.log(resultado);
-console.log(`el array quedo asi : ${arr}`);
+ // funcion que toma una cadena y devuelve cantidad de vocales y consonantes
+
+ const contarVc =(cadena)=>{
+
+    const vocales= cadena.match(/[aeiuo]/g).length
+    console.log(vocales)
+    const consonantes= cadena.match(/[^aeiuo]/g).length
+    console.log(consonantes)
+    return{
+        vocales,
+        consonantes
+    }
+ }
+
+ const resultado = contarVc('contando')
+ console.log(resultado)
+
+ // funcion que valida si un nombre es valido
+ 
+
+ const validarNombre = (nombre)=>{
+
+    return /^[a-z\s]+$/g.test(nombre)
+
+ }
+
+ console.log(validarNombre('facundo,'))
+
+ 
+
+ //funcion para validar un email valido
+
+ const validaEmail = (email)=>{
+
+ return   /\S+@\S+\.\S+/.test(email)
+
+ }
+
+ console.log(validaEmail('facun90@live.com'))
