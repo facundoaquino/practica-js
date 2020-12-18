@@ -37,6 +37,8 @@ const users = [
 	},
 ]
 
+/*---------------------- USAR ARRAY DE USERS ---------------------*/
+
 // escribir funcion pais que recibe como parametro un String(pais) y retorna un array de usuarios   de ese pais
 
 const pais = (pais) => {}
