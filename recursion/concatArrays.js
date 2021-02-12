@@ -1,4 +1,4 @@
-/* cocact two or more arrays whit recursion */
+/* concat  two or more arrays whit recursion */
 
 
 const arr1 = [1, 2, 3]
