@@ -27,7 +27,7 @@ const searchWithFor = (arr, num) => {
 	return false
 }
 
-const arrAuto = new Array(1000000)
+const arrAuto = Array(1000000)
 const fillArray = arrAuto.fill().map((_, i) => i)
 
 console.time('binary search')
