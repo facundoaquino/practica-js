@@ -16,6 +16,21 @@ const reverseString = (str, result = '') => {
 console.log(reverseString('hola como estas'))
 console.timeEnd('reverse recursion')
 
+/*----------------------  ---------------------*/
+console.time('reverse recursion 2')
+const reverseString2 = (str) => {
+	if (str == '') {
+		return ''
+	}
+
+	return reverseString2(str.substring(1)) + str.charAt(0)
+}
+
+console.log(reverseString2('hola como estas'))
+console.timeEnd('reverse recursion 2')
+
+/*----------------------  ---------------------*/
+
 /* ES MAS EFECTIVO CON LOS METODOS ? */
 
 console.time('reverse whit methos')
