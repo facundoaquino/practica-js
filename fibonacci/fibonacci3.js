@@ -17,6 +17,7 @@ const getFibonacciUntil = (terms) => {
 	return start
 }
 
-const result = getFibonacciUntil(109000000)
+const result = getFibonacciUntil(6)
+console.log(result)
 
 console.timeEnd('fibo interative')

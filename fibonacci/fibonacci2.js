@@ -1,3 +1,5 @@
+const termToGet = 4
+
 console.time('fibonacci recursivo')
 
 function getTermOfFibonacci(n) {
@@ -8,7 +10,7 @@ function getTermOfFibonacci(n) {
 	return getTermOfFibonacci(n - 1) + getTermOfFibonacci(n - 2)
 }
 
-const result = getTermOfFibonacci(19)
+const result = getTermOfFibonacci(termToGet)
 console.timeEnd('fibonacci recursivo')
 console.log(result)
 
@@ -20,6 +22,7 @@ const getFibonnacciPosition = (pos) => {
 	let actual
 	const iterations = pos - 2
 
+	//siempre mantengo los ultimos 2 para sacar el siguiente
 	for (let i = 1; i <= iterations; i++) {
 		actual = start[0] + start[1]
 		start[0] = start[1]
@@ -28,6 +31,6 @@ const getFibonnacciPosition = (pos) => {
 	return actual
 }
 
-const result2 = getFibonnacciPosition(20)
+const result2 = getFibonnacciPosition(termToGet + 1)
 console.timeEnd('fibonacci iterativo')
 console.log(result2)
