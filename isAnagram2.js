@@ -15,8 +15,8 @@ const isAnagram = (str, anagram) => {
 
 		str.splice(charIndex, 1)
 	}
-	return str.length >= 0
+	return true
 }
 
-const result = isAnagram('limon', 'monil')
+const result = isAnagram('limons', 'monils')
 console.log(result)
