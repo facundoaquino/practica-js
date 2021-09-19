@@ -1,7 +1,5 @@
 console.log('************')
 function solution(S, T) {
-	// write your code in JavaScript (Node.js 8.9.4)
-
 	if (S === T) return 'NOTHING'
 
 	if (T.length > S.length) {

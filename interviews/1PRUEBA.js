@@ -44,7 +44,7 @@ function solution2(S = String) {
 			instances++
 			word = 'BALLOON'
 		}
-
+		//AGREGUE ESTA VALIDACION PARA QUE CORTE ANTES SI TIENE MENOS CARACTERES DE LOS QUE PUEDE COMPLETAR EN LA CADENA ORIGINAL
 		if (S.length - i === 6 && word.length === 7) break
 	}
 	return instances
