@@ -1,4 +1,4 @@
-const num = 7
+const num = 4
 
 console.time('recursion')
 const sumRecursion = (num) => {
