@@ -1,0 +1,4 @@
+3 steps than we need know
+-recursion
+-store(memoize)
+-bottom-up
