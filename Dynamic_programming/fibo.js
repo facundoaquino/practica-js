@@ -44,3 +44,25 @@ const fibDinamic = (n, memo) => {
 const arrD = []
 const resultDinamic = fibDinamic(65, arrD)
 console.log(resultDinamic)
+
+/*---------------------- DINAMIC SOLUTION  WHIT CLOUSURE---------------------*/
+
+// fibo =  1, 1, 2 , 3  , 5 ,8 , 13 , 24 , 35 ,57
+
+const fibDinamic2 = () => {
+	const map = {}
+
+	return function fib(n) {
+		if (map[n]) {
+			return map[n]
+		}
+		if (n === 1 || n === 2) {
+			return 1
+		}
+
+		map[n] = fib(n - 1) + fib(n - 2)
+		return map[n]
+	}
+}
+const fibi = fibDinamic2()
+console.log(fibi(6))
