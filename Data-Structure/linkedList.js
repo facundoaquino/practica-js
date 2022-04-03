@@ -1,6 +1,6 @@
 //LISTA A PARTIR DE UN ARRAY AGREGANDO AL FINAL DE LA LISTA , OSEA MANTENIENDO EL ORDEN
 
-class Node {
+export class Node {
 	constructor(data) {
 		this.data = data
 		this.next = null
@@ -8,7 +8,7 @@ class Node {
 }
 
 //declaramos la lista
-class LinkedList {
+export class LinkedList {
 	constructor() {
 		this.head = null
 	}
@@ -20,7 +20,7 @@ class LinkedList {
 			this.head = newNode
 		} else {
 			let current = this.head
-			while (current.next) {
+			while (current.next != null) {
 				current = current.next
 			}
 			current.next = newNode
@@ -56,11 +56,11 @@ arr.forEach((num) => myList.add(num))
 
 // funcion que recibe lista la recorre e imprime , recordar que en js los parametros van por valor no por referencia entonces mantenemos nuestro puntero original apuntando al head de la lista
 
-const showList = (list) => {
-	// console.log(list)
-	while (list) {
-		console.log(list.data)
-		list = list.next
+const showList = (listHead) => {
+	// console.log(listHead)
+	while (listHead) {
+		console.log(listHead.data)
+		listHead = listHead.next
 	}
 }
 
@@ -71,7 +71,8 @@ const showList = (list) => {
 const myList2 = new LinkedList()
 
 arr.forEach((num) => myList2.addBegin(num))
-// showList(myList2.head)
+showList(myList2.head)
+showList(myList2.head)
 
-myList.printList()
-myList2.printList()
+// myList.printList()
+// myList2.printList()
